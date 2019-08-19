@@ -1,0 +1,68 @@
+body{
+    background-color: white;
+    transition: 1s;
+}
+/* styling heading */
+h1{
+    font-size: 2.8em;
+    font-family: cursive;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10% 0%;
+}
+
+/* styling switch */
+.switch {
+  height: 34px;
+  width: 88px;
+  position: relative;
+  text-align: center;
+  display: inline-block; 
+  margin: 0% 46%;
+  
+}
+
+
+/* styling slider */
+.slider {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: #ccc;
+  transition: .6s;
+  -webkit-transition: .6s;
+  border-radius: 100px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 30px;
+  left: 5px;
+  bottom: 2px;
+  transition: .6s;
+  -webkit-transition: .6s;
+  border-radius: 50%;  
+  background-color: #474545;    
+}
+
+
+/* slider path and color */
+input:checked + .slider {
+  border-radius: 100px;
+  background-color: forestgreen;
+}
+
+/* slider position and color after clicking */
+input:checked + .slider:before {
+  background-color: white;
+  transform: translateX(48px);
+  -webkit-transform: translateX(48px);
+  -ms-transform: translateX(48px);
+  border-radius: 50%;
+    
+}

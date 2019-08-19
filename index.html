@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Theme Changer</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script>
+            function color(){
+                $('.theme').change(function color(){
+                    if(this.checked){
+                        document.body.style.background="#474545";
+                        document.body.style.color="white";
+                        
+                    }
+                    else{
+                        document.body.style.background="white";
+                        document.body.style.color="black";
+                    }
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="theme">Change Theme</h1>
+            <label onclick="color()" class="switch">
+              <input type="checkbox" class="theme">
+              <span class="slider"></span>
+            </label>
+        </div>
+    </body>
+</html>
